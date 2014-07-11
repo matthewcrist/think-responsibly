@@ -8,8 +8,8 @@
 
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
 
-    <%= stylesheet_link_tag "all" %>
-    <%= javascript_include_tag  "all" %>
+    <%= stylesheet_link_tag "all", "media-elements/mediaelementplayer.css" %>
+    <%= javascript_include_tag  "all", "media-elements/mediaelement-and-player.min.js" %>
   </head>
 
   <body class="<%= page_classes %>">
@@ -28,9 +28,26 @@
       <% page_articles.each_with_index do |article, i| %>
         <article>
           <h2><%= article.title %> <span><%= article.date.strftime('%b %e') %></span></h2>
-          <%= article.summary %>
+          <%= article.body %>
         </article>
       <% end %>
       <footer>Crafted by <a href="http://cantina.co" title="Cantina">Cantina</a> in Boston.</footer>
+      <script>
+        (function($) {
+
+          window._media_player = new MediaElementPlayer('audio', {
+            alwaysShowControls: true,
+            iPadUseNativeControls: true,
+            iPhoneUseNativeControls: true,
+            AndroidUseNativeControls: true,
+            audioWidth: '100%'
+          });
+
+          $(window._media_player).on("play", function(event) {
+            $("a").not("[href*='?t=']").attr("target", "_blank");
+          });
+
+        })(jQuery);
+      </script>
   </body>
 </html>
