@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+a {
+  color: rgb(52,152,219);
+
+  &:hover {
+    color: rgb(52,73,94);
+  }
+}
+
+body {
+  font-family: Courier, serif;
+  background: rgb(255,255,255);
+  // background: url(http://api.thumbr.it/whitenoise-361x370.png?background=fff6e5&noise=eddec0&density=12&opacity=64);
+}
+
+footer {
+  padding-top: 2.5em;
+  border-top: 3px solid rgb(0,0,0);
+  text-align: center;
+}

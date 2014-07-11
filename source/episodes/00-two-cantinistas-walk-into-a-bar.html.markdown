@@ -1,0 +1,10 @@
+---
+title: "00: Two Cantinistas Walk Into a Bar"
+date: 2014-07-11 00:08 UTC
+tags:
+link:
+---
+
+This week I am joined by <a href="http://stonehippo.com">George White</a> and a bottle of <a href="http://www.woodfordreserve.com">Woodford Reserve</a>. George and I talk about some of the new stuff in iOS 8, what is coming in wearables (and if we really need them), and George's desire to erase all of his social networks. I take a shot of whiskey.
+
+READMORE

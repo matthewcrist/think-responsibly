@@ -1,0 +1,26 @@
+article {
+  line-height: 1.4;
+  margin-bottom: 2.5em;
+
+  p, li, blockquote {
+    font-size: 1.25em;
+  }
+}
+
+h2 {
+  line-height: 1;
+  margin-bottom: 0.25em;
+
+  a {
+    text-decoration: none;
+    color: rgb(0,0,0);
+
+    &:hover {
+      color: rgb(0,0,0);
+    }
+  }
+
+  span {
+    color: rgb(175,175,175);
+  }
+}

@@ -25,7 +25,12 @@
           </ul>
         </nav>
       </header>
-      <%= yield %>
+      <% page_articles.each_with_index do |article, i| %>
+        <article>
+          <h2><%= article.title %> <span><%= article.date.strftime('%b %e') %></span></h2>
+          <%= article.summary %>
+        </article>
+      <% end %>
       <footer>Crafted by <a href="http://cantina.co" title="Cantina">Cantina</a> in Boston.</footer>
   </body>
 </html>
